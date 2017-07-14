@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.droiddigger.lushan.retrofittest.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/imageView"
+                android:visibility="gone"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Image Title"
+                android:layout_below="@+id/imageView"
+                android:gravity="center_horizontal"
+                android:visibility="gone"
+                android:id="@+id/img_title"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_title"
+                android:text="Choose image"
+                android:id="@+id/chooseBtn"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chooseBtn"
+                android:text="Upload image"
+                android:id="@+id/uploadBtn"
+                android:enabled="false"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/uploadBtn"
+                android:text="fetch string data"
+                android:id="@+id/fetchBtn"
+                android:onClick="fetch"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fetchBtn"
+                android:text="get method"
+                android:id="@+id/getBtn"
+                android:onClick="get"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
