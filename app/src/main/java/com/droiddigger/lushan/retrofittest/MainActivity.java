@@ -14,6 +14,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
@@ -39,7 +41,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         chooseBtn = (Button) findViewById(R.id.chooseBtn);
         uploadBtn = (Button) findViewById(R.id.uploadBtn);
         imageView = (ImageView) findViewById(R.id.imageView);
-
+//        imgV=(ImageView)findViewById(R.id.imgV);
+//        Glide.with(getBaseContext()).load("http://10.0.2.2/shop/image/catalog/products/Card set/609A6647.png").into(imgV);
         chooseBtn.setOnClickListener(this);
         uploadBtn.setOnClickListener(this);
 
